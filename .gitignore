@@ -1,0 +1,12 @@
+*.class
+
+tmp/*
+target/*war
+target/test-results/*
+# Package Files #
+lib/*
+*/src/main/webapp/WEB-INF/lib/*
+src/main/webapp/WEB-INF/lib/
+*.war
+*.ear
+/src/main/webapp/WEB-INF/classes/*
