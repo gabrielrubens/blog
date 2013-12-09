@@ -3,7 +3,7 @@ package br.com.gabrielrubens.blog.controllers;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
-import org.mockito.Mockito;
+import static org.mockito.Mockito.*;
 import org.mockito.MockitoAnnotations;
 
 import br.com.gabrielrubens.blog.repositories.PostRepositoryImpl;
@@ -21,7 +21,6 @@ public class IndexControllerTest {
 	public void deveRetornarOsUltimosPosts() {
 		IndexController controller = new IndexController(postRepository);
 		controller.index();
-		Mockito.verify(postRepository, Mockito.times(1)).ultimos();
-		
+		verify(postRepository, times(1)).ultimos();
 	}
 }
