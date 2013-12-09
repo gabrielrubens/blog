@@ -2,6 +2,8 @@
 <classpath>
 	<classpathentry including="**/*.java" kind="src" path="src/main/java"/>
 	<classpathentry excluding="**/*.java" kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/test/resources"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/default/antlr-2.7.7.jar"/>
 	<classpathentry kind="lib" path="lib/default/dom4j-1.6.1.jar"/>
@@ -30,5 +32,9 @@
 	<classpathentry kind="lib" path="lib/default/xpp3_min-1.1.4c.jar"/>
 	<classpathentry kind="lib" path="lib/default/xstream-1.4.4.jar"/>
 	<classpathentry kind="lib" path="lib/default/sitemesh-3.0-alpha-2.jar"/>
+	<classpathentry kind="lib" path="lib/test/hamcrest-all-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/test/hamcrest-core-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/test/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="lib/test/mockito-all-1.9.0.jar"/>
 	<classpathentry kind="output" path="src/main/webapp/WEB-INF/classes"/>
 </classpath>

@@ -14,10 +14,6 @@ public abstract class Repository<T, I extends Serializable> {
 	protected Session session;
 	protected Class<T> clazz;
 
-	@Deprecated
-	public Repository(){
-	}
-	
 	@Inject
 	protected Repository(Session session) {
 		this.session = session;
@@ -32,7 +28,7 @@ public abstract class Repository<T, I extends Serializable> {
 		session.persist(entity);
 	}
 	
-	public List<T> findAll() {
+	public List<T> buscarTodos() {
 		Query query = session.createQuery("from " + clazz.getName());
 
 		@SuppressWarnings("unchecked")
